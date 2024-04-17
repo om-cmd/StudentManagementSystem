@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5 mb-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"> <i class="bi bi-bucket-fill"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">Student</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading">You can do tasks like<br>Edit-Delete-Add-View</h3>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Student")">Student Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"> <i class="bi bi-person-circle"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">Teacher</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading">You can do tasks like<br>Edit-Delete-Add-View</h3>
+
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Teacher")">Teacher Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"> <i class="bi bi-box"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">Cources</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading">You can do tasks like<br>Edit-Delete-Add-View</h3>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Cources")">Cources Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"> <i class="bi bi-box"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-3">Faculty</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading">You can do tasks like<br>Edit-Delete-Add-View</h3>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Faculty")">Faculty Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"> <i class="bi bi-box"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-3">ChosenCources</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading">You can do tasks like<br>Edit-Delete-Add-View</h3>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "ChosenCources")">ChoesnCource Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

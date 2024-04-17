@@ -1,0 +1,41 @@
+﻿@model StudentManagementSystem.ViewModels.ChosenCourcesViewModel
+
+<h1>Edit Chosen Course</h1>
+
+<form asp-action="Edit">
+    <div class="form-group">
+        <label asp-for="StudentName" class="control-label"></label>
+        <select asp-for="StudentName" class="form-control">
+            <option value="">-- Select Student --</option>
+            @foreach (var student in ViewBag.Students)
+            {
+                <option value="@student">@student</option>
+            }
+        </select>
+        <span asp-validation-for="StudentName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FacultyName" class="control-label"></label>
+        <select asp-for="FacultyName" class="form-control">
+            <option value="">-- Select Faculty --</option>
+            @foreach (var faculty in ViewBag.Faculties)
+            {
+                <option value="@faculty">@faculty</option>
+            }
+        </select>
+        <span asp-validation-for="FacultyName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <select asp-for="Title" class="form-control">
+            <option value="">-- Select Course Title --</option>
+            @foreach (var course in ViewBag.Courses)
+            {
+                <option value="@course">@course</option>
+            }
+        </select>
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>

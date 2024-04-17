@@ -1,0 +1,14 @@
+﻿@model StudentManagementSystem.ViewModels.ChosenCourcesViewModel
+
+<h1>Delete Chosen Course</h1>
+
+<div>
+    <h4>Are you sure you want to delete this?</h4>
+    <h4>Student Name: @Model.StudentName</h4>
+    <h4>Faculty Name: @Model.FacultyName</h4>
+    <h4>Course Title: @Model.Title</h4>
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
